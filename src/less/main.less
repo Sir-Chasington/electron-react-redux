@@ -1,0 +1,49 @@
+@import './variables.less';
+
+html * {
+    color: @normalFontColor;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#app {
+    height: 100%;
+
+    .all {
+        height: 100%;
+        overflow: auto;
+
+        &.body-dark {
+            background-color: @darkDark;
+        }
+    }
+    
+}
+
+.dark-font {
+    color: @white !important;
+}
+
+.dark-input {
+    background-color: @darkLite !important;
+    border: none !important;
+    color: @white !important;
+}
+
+// .titlebar {
+//     -webkit-user-select: none;
+//     -webkit-app-region: drag;
+// }
+
+@import './modules/darkToggle.less';
+@import './modules/header.less';
+@import './modules/home.less';
